@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--Java Script prototype-->
+<script>
+    function Player(){
+        this.name;
+        this.hitpoints=100;
+        this.attack=function attack(opponent){
+            opponent.hitpoints-=10;
+            alert(this.name +" just hit " + opponent.name);
+        }
+    }
+    //creating instances
+    var player1= new Player();
+    var player2= new Player();
+
+    player1.name="Arjun";
+    player2.name="Hari";
+
+    player1.attack(player2);
+
+    alert(player2.name +" has " + player2.hitpoints + " hit points left");
+
+</script>
+
+
+</body>
+</html>
