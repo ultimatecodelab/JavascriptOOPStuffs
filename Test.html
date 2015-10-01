@@ -35,6 +35,11 @@
     player1.heal(player2);
     alert(player2.name +" has " + player2.hitpoints + " hit points left");
 
+    //adding new property using prototype
+    Player.prototype.enerrgy = 200;
+    alert("Executing player one instance: " +player1.enerrgy);
+    alert("Executing player two instance: "+ player2.enerrgy);
+
 
 </script>
 
