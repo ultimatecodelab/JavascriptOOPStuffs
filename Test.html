@@ -26,6 +26,16 @@
 
     alert(player2.name +" has " + player2.hitpoints + " hit points left");
 
+    //add a heal method to the player object using the prototype
+    //JavaScript prototype property allows you to add new method to an existing prototype
+    Player.prototype.heal=function heal(targetPlayer){ //dynamic argument coming into this method
+        targetPlayer.hitpoints +=5;
+
+    };
+    player1.heal(player2);
+    alert(player2.name +" has " + player2.hitpoints + " hit points left");
+
+
 </script>
 
 
